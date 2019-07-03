@@ -1,0 +1,33 @@
+{
+  "name": "supertest-examples",
+  "version": "1.0.0",
+  "description": "I experiment with Supertest against public APIs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha specs/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treyturner/supertest-examples.git"
+  },
+  "keywords": [
+    "supertest",
+    "http",
+    "api",
+    "tests",
+    "testing"
+  ],
+  "author": "Trey Turner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/treyturner/supertest-examples/issues"
+  },
+  "homepage": "https://github.com/treyturner/supertest-examples#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "superagent-defaults": "^0.1.14",
+    "supertest": "^4.0.2",
+    "xml2js": "^0.4.19"
+  }
+}
