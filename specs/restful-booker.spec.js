@@ -72,7 +72,9 @@ describe('restful-booker', () => {
                 expect(res.body.depositpaid).to.be.a('boolean')
                 expect(res.body.bookingdates).to.be.an('object')
                 expect(res.body.bookingdates).to.have.property('checkin')
+                expect(res.body.bookingdates.checkin).to.match(/\d{4}-\d{2}-\d{2}/)
                 expect(res.body.bookingdates).to.have.property('checkout')
+                expect(res.body.bookingdates.checkout).to.match(/\d{4}-\d{2}-\d{2}/)
                 if (res.body.additionalneeds) {
                   expect(res.body.additionalneeds).to.be.a('string')
                 }
@@ -98,7 +100,9 @@ describe('restful-booker', () => {
                   expect(parsed.booking.depositpaid).to.be.oneOf(['true', 'false'])
                   expect(parsed.booking.bookingdates).to.be.an('object')
                   expect(parsed.booking.bookingdates).to.have.property('checkin')
-                  expect(parsed.booking.bookingdates).to.have.property('checkout')                  
+                  expect(parsed.booking.bookingdates.checkin).to.match(/\d{4}-\d{2}-\d{2}/)
+                  expect(parsed.booking.bookingdates).to.have.property('checkout')
+                  expect(parsed.booking.bookingdates.checkout).to.match(/\d{4}-\d{2}-\d{2}/)
                   if (parsed.booking.additionalneeds) {
                     expect(parsed.booking.additionalneeds).to.be.a('string')
                   }
