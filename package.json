@@ -25,7 +25,7 @@
   "homepage": "https://github.com/treyturner/supertest-examples#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "superagent-defaults": "^0.1.14",
     "supertest": "^4.0.2",
     "xml2js": "^0.4.19"
